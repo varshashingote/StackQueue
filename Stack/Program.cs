@@ -11,7 +11,7 @@ namespace Stack
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter Your choice 1.stack\n2.queue");
+            Console.WriteLine("Enter Your choice\n 1.stack\n2.queue");
             int ch = Convert.ToInt32(Console.ReadLine());
             switch (ch)
             {
