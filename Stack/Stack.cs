@@ -28,6 +28,25 @@ namespace Stack
             top = newNode;
             Console.WriteLine(" Pushed to Stack is :" + data);
         }
+        public void peak()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("Stack is Empty");
+                return;
+            }
+            Console.WriteLine($"{this.top.data} is on the Top of the Stack");
+        }
+        public void pop()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("Stack is Empty");
+                return;
+            }
+            Console.WriteLine($"Item Popeed is {this.top.data}");
+            top = top.next;
+        }
 
         public void display()
         {
